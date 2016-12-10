@@ -1,0 +1,43 @@
+{
+	"name": "crackerjackdigital/silverstripe-quaff-xml",
+	"type": "silverstripe-module",
+	"description": "Vanilla XML slurping for quaff",
+	"homepage": "http://github.com/crackerjackdigital",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"silverstripe",
+		"api"
+	],
+	"authors": [
+		{
+			"name": "Stephen Wake",
+			"homepage": "http://github.com/crackerjackdigital"
+		}
+	],
+	"require": {
+		"php": ">=5.5",
+		"composer/installers": "*",
+		"silverstripe/framework": ">=3.1",
+		"crackerjackdigital/silverstripe-modular": "dev-develop",
+		"crackerjackdigital/silverstripe-quaff-guzzle": "dev-develop",
+		"crackerjackdigital/silverstripe-quaff-streams": "dev-develop"
+	},
+	"extra": {
+		"installer-name": "quaff-xml"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/crackerjackdigital/silverstripe-modular"
+		},
+		{
+      			"type": "vcs",
+      			"url": "git@github.com:CrackerjackDigital/silverstripe-quaff-streams.git"
+    		},
+	    {
+	      "type": "vcs",
+	      "url": "git@github.com:CrackerjackDigital/silverstripe-quaff-guzzle.git"
+	    }
+	],
+	"minimum-stability": "dev"
+}
